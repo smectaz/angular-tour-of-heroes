@@ -7,13 +7,17 @@ import { AppComponent } from './app.component';
 import { HeroesComponent } from './heroes/heroes.component';
 import { BlockComponent } from './block/block.component';
 import { UserProfileComponent } from './user-profile/user-profile.component';
+import { MenuComponent } from './menu/menu.component';
+import { SignupComponent } from './signup/signup.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HeroesComponent,
     BlockComponent,
-    UserProfileComponent
+    UserProfileComponent,
+    MenuComponent,
+    SignupComponent
   ],
   imports: [
     BrowserModule,
