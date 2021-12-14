@@ -1,0 +1,15 @@
+<div>
+  <p>Mon prenom est {{ User.firstName }}</p>
+
+  <p>Mon nom est {{ User.name }}</p>
+
+  <img [src]="User.photo" [alt]="User.firstName" />
+
+  <p>Ma citation préférée est : {{ User.quote }}</p>
+
+  <input [(ngModel)]="User.quote">
+
+  <p *ngIf="!hiddingAge">je suis agé de {{ User.age }} ans</p>
+
+  <button class="button" (click)="eraseAge()"> je ne vous dirais pas mon age</button>
+</div>
