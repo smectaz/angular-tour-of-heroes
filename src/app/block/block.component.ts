@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Block } from '../block';
 
 @Component({
   selector: 'app-block',
@@ -8,6 +9,10 @@ import { Component, OnInit } from '@angular/core';
 export class BlockComponent implements OnInit {
 
   constructor() { }
+
+  block: Block = {
+    name: 'A B C'
+  };
 
   ngOnInit(): void {
   }
