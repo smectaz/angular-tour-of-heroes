@@ -9,6 +9,9 @@ import { BlockComponent } from './block/block.component';
 import { UserProfileComponent } from './user-profile/user-profile.component';
 import { MenuComponent } from './menu/menu.component';
 import { SignupComponent } from './signup/signup.component';
+import { CreateDonkeyComponent } from './create-donkey/create-donkey.component';
+import { ListDonkeyComponent } from './list-donkey/list-donkey.component';
+import { UserDonkeyComponent } from './user-donkey/user-donkey.component';
 
 @NgModule({
   declarations: [
@@ -17,7 +20,10 @@ import { SignupComponent } from './signup/signup.component';
     BlockComponent,
     UserProfileComponent,
     MenuComponent,
-    SignupComponent
+    SignupComponent,
+    CreateDonkeyComponent,
+    ListDonkeyComponent,
+    UserDonkeyComponent
   ],
   imports: [
     BrowserModule,
