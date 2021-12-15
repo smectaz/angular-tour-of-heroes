@@ -6,5 +6,16 @@
 <div class="central">
   <h1>{{ title }}</h1>
 </div>
-
+<div class="row">
+  <h1 class="display-1">the donkeys</h1>
+  <div class="col-md-6">
+    <app-list-donkey
+      (selectedDonkey)="selectedDonkey($event)"
+      [inDonkeysAvailable]="donkeysAvailable"
+    ></app-list-donkey>
+  </div>
+  <div class="col-md-6">
+    <app-user-donkey [inDonkey]="donkeySelected"></app-user-donkey>
+  </div>
+</div>
 <router-outlet></router-outlet>
